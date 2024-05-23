@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h2>Žemaitė</h2>
+<div class="tekstas">
+<p>Labas! Esu Žemaitė, tikrasis vardas – Julija Beniuševičiūtė-Žymantienė.
+     Gimiau 1845 m. Bukantėje, Plungės valsčiuje. Rėmiau 1863 m. sukilėlius ir
+      dirbau žemės ūkyje. 1883 m. Ušnėnuose susidraugavau su P. Višinskiu, 
+      kuris paskatino rašyti. Gyvendama Puziniškyje dalyvavau moterų suvažiavimuose 
+      ir 1913–1915 m. buvau laikraščio 
+    „Lietuvos žinios“ redaktorė. Parašiau apie 150 kūrinių, pradėjusių realizmo srovę 
+    Lietuvoje. Miriau 1921 m. Marijampolėje.</p>
+   <img src="images/zemaite.jpg" alt="Rotating Image" class="rotate-y"></div>
+
+   <style>
+    
+    h2{font-family: 'Crete Round';
+    justify-content: center;
+align-items: center;
+text-align: center;
+margin: auto;
+font-size: 42px;
+margin: auto;
+margin-top: 6%;}
+
+    .tekstas {border: solid 3px black;
+        
+    height: 40%;
+width: 70%;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: auto;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+margin-top: 6%;}
+
+.tekstas::after {
+        
+        content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0); /* Adjust color and opacity */
+            pointer-events: none; /* Allows clicking through the overlay */
+    }
+
+p {opacity: 1;}
+
+    .rotate-y {
+        width: 200px; /* Adjust the size of the image */
+        height: 200px; /* Adjust the size of the image */
+        animation: rotateY 1s infinite linear;
+    }
+
+    @keyframes rotateY {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+    .rotate-y {width: 100%;}
+</style>
+
+    <style>
+        p {font-family: Marcellus, serif;
+         font-size: 20px;
+        text-align: center;
+    font-weight: 600;}
+
+        body {background-image: url(images/4-Krastovaizdis.jpeg);
+            background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    body::after {
+        content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0); /* Adjust color and opacity */
+            pointer-events: none; /* Allows clicking through the overlay */
+    }
+    </style>    
+
+</body>
+</html>
+
